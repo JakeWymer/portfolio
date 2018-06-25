@@ -35,12 +35,12 @@
         <div class="about-text-wrapper">
                 <div class="about-text">
                     <p>
-                        Hi, my name is Jake Wymer and I am a full-stack software engineer who specializes in building awesome web applications. I have been coding for over 6 years, turning what began as a hobby into a profession I love doing. I am a perpetual learner who enjoys solving  every day problems with software and tinkering with new technologies.
+                        Hi, my name is Jake Wymer and I am a full-stack software engineer who specializes in building awesome web applications. I have been coding for over six years, turning what began as a hobby into a profession I love. I am a perpetual learner who enjoys solving everyday problems with software and tinkering with new technologies.
                     </p>
                 </div>
                 <div class="about-text">
                     <p>
-                        I graduated with a Bachelor of Science in Information Technology Management in 2017, which I earned while gaining professional experience as both a contract web developer and as a full-time employee web developer. I later graduated from DevMountain Bootcamp in 2018. Check out some of my recent projects below and feel free to contact me with any questions!
+                        I graduated with a Bachelor of Science in Information Technology Management in 2017, which I earned while gaining professional experience as both a contract web developer and as a full-time employee web developer. I am set to graduate from DevMountain Bootcamp in September, 2018. Check out some of my recent projects below and feel free to contact me with any questions!
                     </p>
                 </div>
             </div>
