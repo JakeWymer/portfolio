@@ -68,8 +68,7 @@ section, form {
 }
 
 .tagline {
-    width: 66%;
-    text-align: center;
+    display: none;
     margin-bottom: 50px;
 }
 
@@ -80,12 +79,12 @@ section, form {
     margin-top: 50px;
 }
 
+.hero h2 {
+    margin-bottom: 50px;
+}
+
 .hero hr {
-    width: 20%;
-    height: 5px;
-    background-color: white;
-    border: none;
-    margin: 1%;
+    display: none;
 }
 
 #projects {
@@ -170,6 +169,27 @@ form button {
     color: white;
     border: none;
     font-size: 25px;
+}
+
+@media only screen and (min-width : 430px) {
+    .tagline {
+        width: 66%;
+        text-align: center;
+        display: block;
+    }
+    
+    .hero h2 {
+        margin-bottom: 0;
+    }
+
+    .hero hr {
+        width: 20%;
+        height: 5px;
+        background-color: white;
+        border: none;
+        margin: 1%;
+        display: block;
+    }
 }
 
 /* Small Devices, Tablets */
