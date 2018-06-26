@@ -11,9 +11,7 @@
 |
 */
 
-Route::get('/', function () {
-    return view('index');
-});
+Route::get('/', 'HomeController@index');
 
 Route::get('/admin', 'AdminController@admin')    
     ->middleware('is_admin')    
@@ -23,3 +21,5 @@ Route::get('/admin', 'AdminController@admin')
 Route::get('login', 'Auth\LoginController@showLoginForm')->name('login');
 Route::post('login', 'Auth\LoginController@login');
 Route::post('logout', 'Auth\LoginController@logout')->name('logout');
+
+Route::post('projects', 'ProjectController@addProject');
