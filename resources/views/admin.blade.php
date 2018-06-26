@@ -20,14 +20,14 @@
         <button type="submit">Add</button>
     </form>
     <hr />
-    <form method="post" action="/admin">
+    <form method="post" action="/admin" enctype="multipart/form-data">
         {{ csrf_field() }}
         <label for="image">Profile Picture</label>
         <input type="file" name="image"/>
         <label for="tagline">Tagline</label>
         <input type="text" name="tagline" value="{{$me->tagline}}" />
-        <textarea name="par-one" value="{{$me->par_one}}" cols="30" rows="10">Paragraph One</textarea>
-        <textarea name="par-two" value="{{$me->par_two}}" cols="30" rows="10">Paragraph Two</textarea>
+        <textarea name="par_one" cols="30" rows="10">{{$me->par_one}}</textarea>
+        <textarea name="par_two" cols="30" rows="10">{{$me->par_two}}</textarea>
         <button type="submit">Update</button>
     </form>
 </body>

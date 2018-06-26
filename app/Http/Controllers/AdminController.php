@@ -21,16 +21,19 @@ class AdminController extends Controller
     public function updateCopy(Request $request) {
         $me = User::find(1);
 
-        $image = $request->file('image');
-        $name = time().'.'.$image->getClientOriginalExtension();
-        $destinationPath = public_path('/images');
-        $image->move($destinationPath, $name);
+        if ($request->hasFile('image')) {
+            $image = $request->file('image');
+            $name = time().'.'.$image->getClientOriginalExtension();
+            $destinationPath = public_path('/images');
+            $image->move($destinationPath, $name);
+            $me->image = $name;
+        }
 
         $me->tagline = $request->input('tagline');
-        $me->image = $name;
         $me->par_one = $request->input('par_one');
         $me->par_two = $request->input('par_two');
 
         $me->save();
+        return redirect()->back();
     }
 }
