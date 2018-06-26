@@ -20,11 +20,11 @@
         </nav>
     </header>
     <section class="hero">
-        <img src="{{ asset('/images/profile.jpg') }}" alt="Picture of Jake Wymer">
+        <img src="{{asset('images/'). '/' . $me->image}}" alt="Picture of Jake Wymer">
         <h2>Software Engineer</h2>
         <hr />
         <div class="tagline">
-            <h3>I am a self motivated full stack software engineer who enjoys creating interesting and useful technology.</h3>
+            <h3>{{$me->tagline}}</h3>
         </div>
     </section>
     <section id="about">
@@ -35,12 +35,12 @@
         <div class="about-text-wrapper">
                 <div class="about-text">
                     <p>
-                        Hi, my name is Jake Wymer and I am a full-stack software engineer who specializes in building awesome web applications. I have been coding for over six years, turning what began as a hobby into a profession I love. I am a perpetual learner who enjoys solving everyday problems with software and tinkering with new technologies.
+                        {{$me->par_one}}
                     </p>
                 </div>
                 <div class="about-text">
                     <p>
-                        I graduated with a Bachelor of Science in Information Technology Management in 2017, which I earned while gaining professional experience as both a contract web developer and as a full-time employee web developer. I am set to graduate from DevMountain Bootcamp in September, 2018. Check out some of my recent projects below and feel free to contact me with any questions!
+                        {{$me->par_two}}
                     </p>
                 </div>
             </div>
@@ -60,19 +60,19 @@
             </div>
         @endforeach
             <div class="project">
-                <img src="http://via.placeholder.com/400x350" alt="">
+                <img src="http://via.placeholder.com/400x400" alt="">
                 <div class="overlay">
                     <p>YelChat</p>
                 </div>
             </div>
             <div class="project">
-                <img src="http://via.placeholder.com/400x350" alt="">
+                <img src="http://via.placeholder.com/400x400" alt="">
                 <div class="overlay">
                     <p>StubScraper</p>
                 </div>
             </div>
             <div class="project">
-                <img src="http://via.placeholder.com/400x350" alt="">
+                <img src="http://via.placeholder.com/400x400" alt="">
                 <div class="overlay">
                     <p>Project Name</p>
                 </div>
