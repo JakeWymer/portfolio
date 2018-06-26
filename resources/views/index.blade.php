@@ -51,6 +51,12 @@
             <h4>Projects</h4>
         </div>
         <div class="projects-wrapper">
+        @foreach ($projects as $project)
+            <div class="project">
+                <img src="{{asset('images/'). '/' . $project->image}}" alt="">
+                <p>{{$project->name}}</p>
+            </div>
+        @endforeach
             <div class="project">
                 <img src="http://via.placeholder.com/400x350" alt="">
                 <p>YelChat</p>
