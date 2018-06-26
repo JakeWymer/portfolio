@@ -54,20 +54,28 @@
         @foreach ($projects as $project)
             <div class="project">
                 <img src="{{asset('images/'). '/' . $project->image}}" alt="">
-                <p>{{$project->name}}</p>
+                <div class="overlay">
+                    <p>{{$project->name}}</p>
+                </div>
             </div>
         @endforeach
             <div class="project">
                 <img src="http://via.placeholder.com/400x350" alt="">
-                <p>YelChat</p>
+                <div class="overlay">
+                    <p>YelChat</p>
+                </div>
             </div>
             <div class="project">
                 <img src="http://via.placeholder.com/400x350" alt="">
-                <p>StubScraper</p>
+                <div class="overlay">
+                    <p>StubScraper</p>
+                </div>
             </div>
             <div class="project">
                 <img src="http://via.placeholder.com/400x350" alt="">
-                <p>Project Name</p>
+                <div class="overlay">
+                    <p>Project Name</p>
+                </div>
             </div>
         </div>
     </section>
