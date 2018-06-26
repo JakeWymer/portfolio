@@ -84,11 +84,12 @@
             <i class="far fa-envelope-open fa-5x" aria-hidden="true"></i>
             <h4>Contact</h4>
         </div>
-        <form action="#">
-            <label for="email-input">Email</label>
-            <input id="email-input" type="email" name="email-input" hint="Email" />
-            <label for="message">Message</label>
-            <textarea rows="4" cols="50" id="message" name="message" hint="Message"></textarea>
+        <form method="post" action="/contact">
+            {{ csrf_field() }}
+            <label for="email">Email</label>
+            <input id="email-input" type="email" name="email" hint="Email" />
+            <label for="body">Message</label>
+            <textarea rows="4" cols="50" id="message" name="body" hint="Message"></textarea>
             <button type="submit">Send</button>
         </form>
     </section>

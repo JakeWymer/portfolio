@@ -24,3 +24,4 @@ Route::post('logout', 'Auth\LoginController@logout')->name('logout');
 
 Route::post('projects', 'ProjectController@addProject');
 Route::post('admin', 'AdminController@updateCopy');
+Route::post('contact', 'HomeController@contact');
