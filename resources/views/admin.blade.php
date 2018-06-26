@@ -10,11 +10,25 @@
     <h1>ADMIN PAGE</h1>
     <form method="post" action="/projects" enctype="multipart/form-data">
         {{ csrf_field() }}
+        <label for="image">Project Image</label>
         <input type="file" name="image"/>
+        <label for="name">Project Name</label>
         <input type="text" name="name" />
+        <label for="github">Github Link</label>
         <input type="text" name="github" />
-        <textarea name="description" id="" cols="30" rows="10"></textarea>>
+        <textarea name="description" id="" cols="30" rows="10">Project Description</textarea>
         <button type="submit">Add</button>
+    </form>
+    <hr />
+    <form method="post" action="/admin">
+        {{ csrf_field() }}
+        <label for="image">Profile Picture</label>
+        <input type="file" name="image"/>
+        <label for="tagline">Tagline</label>
+        <input type="text" name="tagline" value="{{$me->tagline}}" />
+        <textarea name="par-one" value="{{$me->par_one}}" cols="30" rows="10">Paragraph One</textarea>
+        <textarea name="par-two" value="{{$me->par_two}}" cols="30" rows="10">Paragraph Two</textarea>
+        <button type="submit">Update</button>
     </form>
 </body>
 </html>
