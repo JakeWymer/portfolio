@@ -16,8 +16,8 @@ class UpdateUsersTable extends Migration
         Schema::table('users', function($table) {
             $table->text('tagline')->nullable();
             $table->string('image')->nullable();
-            $table->text('par-one')->nullable();            
-            $table->text('par-two')->nullable();            
+            $table->text('par_one')->nullable();            
+            $table->text('par_two')->nullable();            
         });
     }
 
@@ -31,8 +31,8 @@ class UpdateUsersTable extends Migration
         Schema::table('users', function($table) {
             $table->dropColumn('tagline');
             $table->dropColumn('image');
-            $table->dropColumn('par-one');
-            $table->dropColumn('par-two');
+            $table->dropColumn('par_one');
+            $table->dropColumn('par_two');
         });
     }
 }
