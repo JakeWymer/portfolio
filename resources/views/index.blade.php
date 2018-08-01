@@ -55,7 +55,7 @@
             <div class="project">
                 <img src="{{asset('images/'). '/' . $project->image}}" alt="">
                 <div class="overlay">
-                    <p>{{$project->name}}</p>
+                    <a href="{{$project->github}}" target="blank">{{$project->name}}</a>
                 </div>
             </div>
         @endforeach
