@@ -59,24 +59,6 @@
                 </div>
             </div>
         @endforeach
-            <div class="project">
-                <img src="http://via.placeholder.com/400x400" alt="">
-                <div class="overlay">
-                    <p>YelChat</p>
-                </div>
-            </div>
-            <div class="project">
-                <img src="http://via.placeholder.com/400x400" alt="">
-                <div class="overlay">
-                    <p>StubScraper</p>
-                </div>
-            </div>
-            <div class="project">
-                <img src="http://via.placeholder.com/400x400" alt="">
-                <div class="overlay">
-                    <p>Project Name</p>
-                </div>
-            </div>
         </div>
     </section>
     <section id="contact">
