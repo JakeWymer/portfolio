@@ -88,7 +88,7 @@
         </form>
     </section> -->
     <footer>
-        <p>jakesnewjob@gmail.com</p>
+        <p>jakesnextjob@gmail.com</p>
         <div class="social">
             <a href="https://github.com/JakeWymer" target="blank"><i class="fab fa-github-square fa-3x"></i></a>
             <a href="https://www.linkedin.com/in/jake-wymer/" target="blank"><i class="fab fa-linkedin fa-3x"></i></a>
