@@ -91,6 +91,7 @@ section, form {
     justify-content: center;
     background-color: rgb(3, 102, 149);
     color: white;
+    overflow: hidden;
 }
 
 .blue {
