@@ -21,4 +21,9 @@ class HomeController extends Controller
         Mail::to($me->email)->send(new Contacted($request));
         return redirect()->back();
     }
+
+    public function resume() {
+        $pathToFile = public_path() . '/files/Jake Wymer Resume August 2018.pdf';
+        return response()->file($pathToFile);
+    }
 }
