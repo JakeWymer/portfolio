@@ -195,6 +195,27 @@ form button {
     font-size: 25px;
 }
 
+footer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(40,40,40);
+    color: white;
+    padding: 10px 0;
+}
+
+.social {
+    display: flex;
+    justify-content: space-between;
+    width: 50%;
+    margin-top: 15px;
+}
+
+.social a {
+    font-size: 20px;
+}
+
 @media only screen and (min-width : 430px) {
     .tagline {
         width: 66%;
@@ -236,11 +257,19 @@ form button {
     .projects-wrapper {
         padding: 0 0;
     }
+
+    .social {
+        width: 35%;
+    }
 }
 
 /* Medium Devices, Desktops */
 @media only screen and (min-width : 992px) {
     form {
         padding: 0 25%;
+    }
+
+    .social {
+        width: 20%;
     }
 }
