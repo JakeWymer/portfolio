@@ -7,9 +7,11 @@ $(document).ready(function() {
   }
 
   $("nav > ul > li > a").click(function(e) { 
-    // Prevent a page reload when a link is pressed
-    e.preventDefault(); 
+    if(this.id) {
+      // Prevent a page reload when a link is pressed
+      e.preventDefault(); 
       // Call the scroll function
-    goToByScroll(this.id.slice(0, -4));           
+      goToByScroll(this.id.slice(0, -4));
+    }           
   });
 });

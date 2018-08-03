@@ -25,7 +25,7 @@
             <ul>
                 <li><a id="about-nav"href="">About</a></li>
                 <li><a id="projects-nav" href="">Projects</a></li>
-                <li><a id="contact-nav" href="">Contact</a></li>
+                <li><a href="/resume">Resume</a></li>
             </ul>
         </nav>
     </header>
