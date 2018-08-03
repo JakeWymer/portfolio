@@ -73,7 +73,7 @@
         @endforeach
         </div>
     </section>
-    <section id="contact">
+    <!-- <section id="contact">
         <div class="section-title">
             <i class="far fa-envelope-open fa-5x" aria-hidden="true"></i>
             <h4>Contact</h4>
@@ -86,7 +86,15 @@
             <textarea rows="4" cols="50" id="message" name="body" hint="Message"></textarea>
             <button type="submit">Send</button>
         </form>
-    </section>
+    </section> -->
+    <footer>
+        <p>jakesnewjob@gmail.com</p>
+        <div class="social">
+            <a href="https://github.com/JakeWymer" target="blank"><i class="fab fa-github-square fa-3x"></i></a>
+            <a href="https://www.linkedin.com/in/jake-wymer/" target="blank"><i class="fab fa-linkedin fa-3x"></i></a>
+            <a href="https://www.facebook.com/jakesnextjob" target="blank"><i class="fab fa-facebook-square fa-3x"></i></a>
+        </div>
+    </footer>
     <script
   src="https://code.jquery.com/jquery-3.3.1.min.js"
   integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
