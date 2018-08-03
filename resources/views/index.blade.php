@@ -52,12 +52,14 @@
         </div>
         <div class="projects-wrapper">
         @foreach ($projects as $project)
-            <div class="project">
-                <img src="{{asset('images/'). '/' . $project->image}}" alt="">
-                <div class="overlay">
-                    <a href="{{$project->github}}" target="blank">{{$project->name}}</a>
+            <a href="{{$project->github}}" target="blank">
+                <div class="project">
+                    <img src="{{asset('images/'). '/' . $project->image}}" alt="">
+                    <div class="overlay">
+                        <p>{{$project->name}}</p>
+                    </div>
                 </div>
-            </div>
+            </a>
         @endforeach
         </div>
     </section>
