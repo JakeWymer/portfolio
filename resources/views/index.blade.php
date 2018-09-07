@@ -26,6 +26,8 @@
     <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css">
     <link href="https://fonts.googleapis.com/css?family=Lato:400,700,400italic,700italic" rel="stylesheet" type="text/css">
 
+    <link rel="stylesheet" href="https://cdn.rawgit.com/konpa/devicon/df6431e323547add1b4cf45992913f15286456d3/devicon.min.css">
+
     <title>Jake Wymer | Software Engineer</title>
 
 </head>
@@ -41,10 +43,13 @@
         <div class="collapse navbar-collapse" id="navbarResponsive">
           <ul class="navbar-nav ml-auto">
             <li class="nav-item mx-0 mx-lg-1">
-              <a class="nav-link py-3 px-0 px-lg-3 rounded js-scroll-trigger" href="#portfolio">Portfolio</a>
+              <a class="nav-link py-3 px-0 px-lg-3 rounded js-scroll-trigger" href="#about">About</a>
             </li>
             <li class="nav-item mx-0 mx-lg-1">
-              <a class="nav-link py-3 px-0 px-lg-3 rounded js-scroll-trigger" href="#about">About</a>
+              <a class="nav-link py-3 px-0 px-lg-3 rounded js-scroll-trigger" href="#skills">Skills</a>
+            </li>
+            <li class="nav-item mx-0 mx-lg-1">
+              <a class="nav-link py-3 px-0 px-lg-3 rounded js-scroll-trigger" href="#portfolio">Portfolio</a>
             </li>
             <li class="nav-item mx-0 mx-lg-1">
               <a class="nav-link py-3 px-0 px-lg-3 rounded js-scroll-trigger" href="/resume">Resume</a>
@@ -64,6 +69,78 @@
       </div>
     </header>
 
+    <!-- About Section -->
+    <section class="text-secondary mb-0" id="about">
+      <div class="container">
+        <h2 class="text-center text-uppercase text-secondary">About</h2>
+        <hr class="star-dark mb-5">
+        <div class="row">
+          <div class="col-lg-12">
+            <p class="lead">{{$me->par_one}}</p>
+          </div>
+        </div>
+        <div class="row">
+            <div class="col-lg-12">
+                <p class="lead">{{$me->par_two}}</p>
+            </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section class="bg-primary text-white mb-0" id="skills">
+      <div class="container">
+        <h2 class="text-center text-uppercase text-white">Skills</h2>
+        <hr class="star-light mb-5">
+        <div class="row" style="justify-content: center;">
+          <div class="col-lg-2" id="skill-item" style="display: flex; flex-direction: column; align-items: center">
+            <i style="font-size: 100px;" class="devicon-javascript-plain"></i>
+            JavaScript
+          </div>
+          <div class="col-lg-2" style="display: flex; flex-direction: column; align-items: center">
+            <i style="font-size: 100px;" class="devicon-react-original"></i>
+            React.js
+          </div>
+          <div class="col-lg-2" style="display: flex; flex-direction: column; align-items: center">
+            <i style="font-size: 100px;" class="devicon-nodejs-plain"></i> 
+            Node.js
+          </div>
+          <div class="col-lg-2" style="display: flex; flex-direction: column; align-items: center">
+            <i style="font-size: 100px;" class="devicon-python-plain"></i> 
+            Python
+          </div>
+          <div class="col-lg-2" style="display: flex; flex-direction: column; align-items: center">
+            <i style="font-size: 100px;" class="devicon-html5-plain"></i> 
+            HTML
+          </div>
+          <div class="col-lg-2" style="display: flex; flex-direction: column; align-items: center">
+            <i style="font-size: 100px;" class="devicon-css3-plain"></i> 
+            CSS
+          </div>
+          <div class="col-lg-2" style="display: flex; flex-direction: column; align-items: center">
+            <i style="font-size: 100px;" class="devicon-git-plain"></i> 
+            Git
+          </div>
+          <div class="col-lg-2" style="display: flex; flex-direction: column; align-items: center">
+            <i style="font-size: 100px;" class="devicon-php-plain"></i> 
+            PHP
+          </div>
+          <div class="col-lg-2" style="display: flex; flex-direction: column; align-items: center">
+            <i style="font-size: 100px;" class="devicon-laravel-plain"></i> 
+            Laravel
+          </div>
+          <div class="col-lg-2" style="display: flex; flex-direction: column; align-items: center">
+            <i style="font-size: 100px;" class="devicon-postgresql-plain"></i> 
+            Postgres
+          </div>
+          <div class="col-lg-2" style="display: flex; flex-direction: column; align-items: center">
+            <i style="font-size: 100px;" class="devicon-mongodb-plain"></i> 
+            MongoDB
+          </div>
+        </div>
+      </div>
+    </section>
+
     <!-- Portfolio Grid Section -->
     <section class="portfolio" id="portfolio">
       <div class="container">
@@ -82,24 +159,6 @@
                     </a>
                 </div>
             @endforeach
-        </div>
-      </div>
-    </section>
-
-     <!-- About Section -->
-     <section class="bg-primary text-white mb-0" id="about">
-      <div class="container">
-        <h2 class="text-center text-uppercase text-white">About</h2>
-        <hr class="star-light mb-5">
-        <div class="row">
-          <div class="col-lg-12">
-            <p class="lead">{{$me->par_one}}</p>
-          </div>
-        </div>
-        <div class="row">
-            <div class="col-lg-12">
-                <p class="lead">{{$me->par_two}}</p>
-            </div>
         </div>
       </div>
     </section>
