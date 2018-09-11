@@ -151,7 +151,7 @@
                 <div class="col-md-6 col-lg-4">
                     <a class="portfolio-item d-block mx-auto" href="{{$project->github}}" target="blank">
                     <div class="portfolio-item-caption d-flex position-absolute h-100 w-100">
-                        <div class="portfolio-item-caption-content my-auto w-100 text-center text-white">
+                        <div class="portfolio-item-caption-content my-auto w-100 text-center text-white" id="project-item-overlay">
                             <p>{{$project->name}}</p>
                             <hr style="color: white; border: 2px solid white"/>
                             <p class="project-description">{{$project->description}}</p>
