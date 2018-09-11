@@ -153,6 +153,8 @@
                     <div class="portfolio-item-caption d-flex position-absolute h-100 w-100">
                         <div class="portfolio-item-caption-content my-auto w-100 text-center text-white">
                             <p>{{$project->name}}</p>
+                            <hr style="color: white; border: 2px solid white"/>
+                            <p class="project-description">{{$project->description}}</p>
                         </div>
                     </div>
                     <img class="img-fluid" src="{{asset('images/'). '/' . $project->image}}" alt="">

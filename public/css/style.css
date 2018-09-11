@@ -389,6 +389,27 @@ body {
       border-radius: 50%;
   }
 
+  #project-item-overlay {
+    display: flex;
+    flex-direction:  column;
+    margin: 0 !important;
+    align-items: center;
+    padding: 10px;
+  }
+
+  #project-item-overlay p{
+    margin-bottom: 0;
+  }
+
+  #project-item-overlay hr{
+    width: 75%;
+    margin-top: 0;
+  }
+
+  .project-description {
+      font-size: 15px;
+  }
+
   @media (min-width: 992px) {
     .footer {
         padding-bottom: 4rem;
