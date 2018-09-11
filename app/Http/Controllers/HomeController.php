@@ -23,7 +23,7 @@ class HomeController extends Controller
     }
 
     public function resume() {
-        $pathToFile = public_path() . '/files/Jake Wymer Resume August 2018.pdf';
+        $pathToFile = public_path() . '/files/Jake Wymer Resume DevMountain Update.pdf';
         return response()->file($pathToFile);
     }
 }
